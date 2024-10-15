@@ -20,9 +20,9 @@ void function_b(const double matrix[3][3], double start[], double updated[], int
 }
 int main() {
 	double matrix[3][3] = { {.8, .2, .0},
-							{.1, .1, .8},
-							{.2, .0, .8} };
-	double start_state[3] = { 1, 0, 0 };
+				{.1, .1, .8},
+				{.2, .0, .8} };//initial matrix with probabilites
+	double start_state[3] = { 1, 0, 0 };//start state represented by 1
 	double new_state[3];
 	function_b(matrix, start_state, new_state, 3);
 	for (int i = 0; i < 6; i++) {
